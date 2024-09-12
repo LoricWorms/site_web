@@ -87,6 +87,11 @@
         text-transform: none
     }
 
+    [type=button],
+    button {
+        -webkit-appearance: button
+    }
+
     ::-moz-focus-inner {
         border-style: none;
         padding: 0
@@ -240,6 +245,17 @@
         font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
     }
 
+    audio,
+    canvas,
+    embed,
+    iframe,
+    img,
+    object,
+    svg,
+    video {
+        display: block;
+        vertical-align: middle
+    }
 
     img,
     video {
@@ -1741,4 +1757,8 @@
 
     .blob-prj6[data-v-04f5f612] {
         background-image: url(/_nuxt/img/js.00f7cb7.png)
+    }
+
+    .background-1 {
+        background-image: url(documents/ender\ lilies\ wallpaper\ \(1\).jpg);
     }
