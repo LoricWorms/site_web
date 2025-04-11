@@ -66,7 +66,7 @@
                 <div class="md:h-96 h-64 bg-cover -mt-16 flex flex-col justify-end"
                     style="background-image:url(documents/background3.jpg)" data-v-ae88d4ae data-v-28f70e01>
                     <h1 class="pl-5 pb-12 text-shadow" data-v-ae88d4ae>
-                        Stage Groupe Open
+                        Stage Ludwig informatique
                     </h1> <svg viewBox="0 0 35.28 2.17" preserveAspectRatio="none" class="st1 margin-bottom-negative-1"
                         data-v-ae88d4ae>
                         <path d="M35.28 1.67c-3.07-.55-9.27.41-16.15 0-6.87-.4-13.74-.58-19.13.1v.4h35.28z"
@@ -82,58 +82,107 @@
                 <div class="bg-black text-white mt-10" data-v-28f70e01>
                     <div class="container mx-auto flex flex-col items-start md:flex-row my-12 md:my-24" data-v-28f70e01>
                         <div class="ml-0 md:ml-12 lg:w-2/3 sticky order-last md:order-first" data-v-28f70e01>
-                            <div class="button" data-v-1830edb3><a href="documents/Rapport de stage.pdf" target="_blank"
+                            <div class="button" data-v-1830edb3><a href="documents/Rapport de stage 2.pdf" target="_blank"
                                     class="button-bloc bg-orangeClair" data-v-1830edb3>
                                     Rapport de stage
                                 </a></div>
                             <h2 class="my-8 orange" data-v-28f70e01>
-                                Stage de première année chez Groupe open
+                                Stage de deuxième année chez Ludwig Informatique
                             </h2>
                             <p class="text-justify my-4 text-grey-9 md:leading-relaxed" data-v-28f70e01>
-                                Le Groupe Open est une entreprise de services du numérique (ESN) spécialisée dans la
-                                transformation digitale, les services IT, et le conseil en technologies. Fondée en
-                                1989, l'entreprise est devenue un acteur majeur dans le domaine des services
-                                numériques, en France et à l'international.
+                                Ludwig Informatique est une entreprise située au 54 rue de Nantes, 44830 Bouaye. 
+                                Elle se spécialise dans l'installation, le dépannage, la vente de matériel informatique 
+                                reconditionné et la création de sites internet.
                             </p>
                             <h3 id="wessSoftMaquette" class="my-8" data-v-28f70e01>
                                 1 - Contexte du stage
                             </h3>
                             <p class="text-justify my-4 text-grey-9 md:leading-relaxed" data-v-28f70e01>
-                                Le stage s'est déroulé dans un cadre professionnel, accueillant et stimulant. Dès
-                                mon arrivée, j'ai été accueilli par le directeur de projet, et celui-ci m'a présenté
-                                les employer et m'a fourni une vue d'ensemble des projets en cours, notamment le
-                                projet « PILAT » sur lequel j’allais concentrer mes efforts durant ces six semaines.
-                                Le projet « PILAT » fait partie d’un programme de refonte de plusieurs projets pour
-                                la DGFiP, visant à simplifier et moderniser les tâches des agents du contrôle
-                                fiscal, améliorer la valorisation de leur travail et piloter plus efficacement
-                                l’activité dans sa globalité.
+                                Au vu de la taille de l'entreprise qui ne comptabilise que deux employés,
+                                j'ai été mis a dispose, en plus de mes tâches attitrées de développeur,
+                                à l'activisté principale de l'entreprise dans le dépannage et la vente de 
+                                matériel informatique.
+                            </p>
+                            <div class="flex mt-10" data-v-6534e546>
+                                <div class="text-black" data-v-6534e546><a
+                                        href="https://github.com/LoricWorms/projetTicketing" target="_blank"
+                                        class="button-bloc bg-orangeClair" data-v-6534e546>
+                                        Voir le repository GitHub du projet
+                                    </a></div>
+                            </div>
                             <h3 id="moduleTimePrestashop" class="my-8" data-v-28f70e01>
-                                2 - 1ère tâche : TP d'initiation aux process de l'entreprise
+                                2 - 1ère tâche : projet d'application de ticketing
                             </h3>
                             <p class="text-justify my-4 text-grey-9 md:leading-relaxed" data-v-28f70e01>
-                                Ma première mission consistait en un travail pratique (TP) sur une version blanche
-                                du projet. J’avais pour but de réaliser le développement front-end et back-end d’une
-                                page CRUD (pour Create, Read, Update, Delete) permettant de restituer, ajouter,
-                                modifier et supprimer les circuits enregistrés dans la base de données. Pour ce
-                                faire, la consigne me renseignait sur les éléments déjà présents ou à rajouter au
-                                projet, ainsi que sur les contraintes techniques à appliquer :
+                                Ma première mission consistait consevoir une application permettant
+                                la création et le suivie des dossiers clients. Pour cela, j'avais 
+                                carte blanche sur la technologies à utiliser. Cette application devait permettre
+                                de :
                             </p>
                             <ul class="list-disc my-4 list-inside text-grey-9" data-v-28f70e01>
-                                <li data-v-28f70e01>utiliser le composant « AutoTable » défini dans le projet</li>
-                                <li data-v-28f70e01>des tests unitaires devaient être réalisés pour chaque
-                                    composant ajouté.</li>
+                                <li data-v-28f70e01>afficher les tickets dans un tableau</li>
+                                <li data-v-28f70e01>créer des tickets (état/nom/date/tel/matériel/problème/...)</li>
+                                <li data-v-28f70e01>modifier un ticket éxistant, notament pour mettre à jour l'état</li>
+                                <li data-v-28f70e01>supprimer un ticket au besion après validation</li>
+                                <li data-v-28f70e01>archiver les ticket clos dans une section dédier où ils seront
+                                    inaltérables.
+                                </li>
                             </ul>
+                                <p class="text-justify my-4 text-grey-9 md:leading-relaxed" data-v-28f70e01>
+                                    Pour se faire j'ai donc utilisé symfony car cela m'a permis de ne pas perdre de 
+                                    temps, au vu du peu de temps que j'avaisd en satge, à me former sur une autre technologie, en plus de renforcer mes connaissances
+                                    en PHP aquis en formation.
+                                </p>
+                                <p class="text-justify my-4 text-grey-9 md:leading-relaxed" data-v-28f70e01>
+                                    Pour se qui est de la gestion de donnée, j'ai, après discution avec mon maître de stage, utilisé un
+                                    un simple fichier Google sheets mis dans un drive (je conviens que cette solution ne puisse être envisagable
+                                    dans la plus part des cas) afin de simuler une base de donnée. Mon projet est donc composé de :
+                            <ul class="list-disc my-4 list-inside text-grey-9" data-v-28f70e01>
+                                    <li data-v-28f70e01>une entité ticket</li>
+                                    <li data-v-28f70e01>un service qui gère les interactions avec Google Sheets</li>
+                                    <li data-v-28f70e01>un controleur gère les opérations liées aux devis, 
+                                                        utilisant Google Sheets comme backend</li>
+                                       <li data-v-28f70e01>un formulaire qui gére aussi bien l'ajout que la modification</li>
+                            </ul>
+                                </p>
+                                <img src="documents/ticket 1.png" alt="Crud" data-v-6534e546>
+                                <p class="text-justify my-4 text-grey-9 md:leading-relaxed" data-v-28f70e01>
+                                    Par la suite, une amélioration m'a été demandé : pouvoir en plus des tickets, gérer des devis.
+                                    J'ai donc pour ainsi dire dupliqué mes éléments déjà présent et les ai adapté à la gestion
+                                    de devis. 
+                                </p>
+                                <img src="documents/devis 1.png" alt="Crud" data-v-6534e546>
+                                <p class="text-justify my-4 text-grey-9 md:leading-relaxed" data-v-28f70e01>
+                                    J'en ai profiter pour travailler un peu l'interface utilisateur un ajoutant un menu de navigation,
+                                    un accueil et un système de cache pour fluidifier la navigation.
+                                </p>
+                                <p class="text-justify my-4 text-grey-9 md:leading-relaxed" data-v-28f70e01>
+                                    Pour finir, le projet à été déployé sur l'hebergement hostinger de l'entrpeprise
+                                </p>
+                                <img src="documents/hostinger.png" alt="Crud" data-v-6534e546>
                             <h3 id="maquettageDesignPresta" class="my-8" data-v-28f70e01>
-                                3 - 2ème tâche : Application LDAP
+                                3 - 2ème tâche : Site vitrine
                             </h3>
                             <p class="text-justify my-4 text-grey-9 md:leading-relaxed" data-v-28f70e01>
-                                Par la suite, on m’a demandé de créer une application permettant de
-                                restituer les différents agents ainsi que certaines informations les
-                                concernant dans un tableau, à partir d’un annuaire LDAP.
-                                Pour cela, je devais concevoir une partie back-end avec Spring Boot et
-                                Java permettant la récupération des données, et une partie front-end
-                                en Vue.js pour la restitution sous forme de tableau.
+                                Par la suite, j’ai été chargé de retravailler le site internet d’un client. 
+                                Pour mener à bien cette mission, plusieurs documents m’ont été fournis en amont, 
+                                notamment un sitemap détaillé, une charte graphique ainsi que diverses ressources permettant 
+                                de respecter l’identité visuelle et les attentes du client.
                             </p>
+                            <p class="text-justify my-4 text-grey-9 md:leading-relaxed" data-v-28f70e01>
+                                Durant la semaine qui a suivi, je me suis concentré sur la refonte du site en prenant en compte 
+                                l’arborescence prévue, le style graphique souhaité, ainsi que l’expérience utilisateur. 
+                                Une fois cette première phase de travail terminée, j’ai pris l’initiative de planifier un rendez-vous 
+                                avec le client afin de lui présenter l’avancée du projet, recueillir ses retours et, si nécessaire, ajuster 
+                                certains éléments pour mieux répondre à ses besoins.
+                            </p>
+                            <div class="flex mt-10" data-v-6534e546>
+                                <div class="text-black" data-v-6534e546><a
+                                        href="https://districta.fr" target="_blank"
+                                        class="button-bloc bg-orangeClair" data-v-6534e546>
+                                        Voir le site vitrine
+                                    </a></div>
+                            </div>
                             <h3 class="my-8" data-v-6534e546>
                                 Conclusion
                             </h3>
@@ -141,13 +190,12 @@
                                 <div data-v-6534e546>
                                     <h4 data-v-6534e546>Synthèse des compétences :</h4>
                                     <ul class="list-disc list-inside my-4" data-v-2fd28016>
-                                        <li data-v-2fd28016>Participation aux daily meeting (Analyser les objectifs et
-                                            les modalités d’organisation d’un projet)
+                                        <li data-v-2fd28016>Production d'une doc technique (Recenser et identifier les ressources numériques)
                                         </li>
-                                        <li data-v-2fd28016>Auto formation en vue.js,
-                                            travail de recherche sur la méthode Agile (Mettre en œuvre des
-                                            outils
-                                            et stratégies de veille informationnelle)</li>
+                                        <li data-v-2fd28016>Réalisation d'une application suivant un cahier des charges(Traiter des demandes concernant les applications)</li>
+                                        <li data-v-2fd28016>Mise à disposition du service via l'hérbergeur hostinger (Déployer un service)</li>
+                                        <li data-v-2fd28016>Consevoir un site vitrine en prenant en compte le référencement naturel (Référencer les services en ligne de l’organisation et mesurer leur visibilité.)</li>
+                                        <li data-v-2fd28016>Prise de rendez vous avec le client (Évaluer les indicateurs de suivi d’un projet et analyser les écarts)</li>
                                     </ul>
                                 </div>
                             </div>
@@ -165,13 +213,13 @@
                                 Autre stage
                             </h6>
                             <div class="flex my-3" data-v-04f5f612><a href="stageSioSlam2.html"
-                                    class="blob-prj10 bg-cover w-10 h-10 rounded-full mr-3" data-v-04f5f612></a>
+                                    class="blob-prj9 bg-cover w-10 h-10 rounded-full mr-3" data-v-04f5f612></a>
                                 <div data-v-04f5f612>
-                                    <p data-v-04f5f612><a href="stageSioSlam2.html" class="font-bold" data-v-04f5f612>
-                                            Stage 2ème année
+                                    <p data-v-04f5f612><a href="stageSioSlam.html" class="font-bold" data-v-04f5f612>
+                                            Stage 1ère année
                                         </a></p>
                                     <div data-v-04f5f612>
-                                        BTS SIO 2024/2025
+                                        BTS SIO 2023/2021
                                     </div>
                                 </div>
                             </div>

@@ -11,6 +11,8 @@
     <link rel="icon" type="image/x-icon" href="documents/favicon.ico" />
     <link href="style.css" rel="stylesheet" type="text/css" />
 
+    <link rel="preload" href="/_nuxt/static/1647443529/gsbPpe/payload.js" as="script">
+    <link rel="preload" href="/_nuxt/static/1647443529/manifest.js" as="script">
 </head>
 
 <body>
@@ -35,7 +37,7 @@
                                             class="even-odd" style="display:none" data-v-a2c3d1e2></path>
                                     </svg></button></div>
                             <nav class="flex-col flex-grow pb-4 md:pb-0 md:flex md:justify-end md:flex-row hidden"
-                                data-v-a2c3d1e2><a href="index.html#APropos"
+                                data-v-a2c3d1e2><a href="index.html #APropos"
                                     class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-300 focus:bg-gray-300"
                                     data-v-a2c3d1e2>
                                     À propos
@@ -62,10 +64,9 @@
                 </div>
                 <div data-v-6534e546>
                     <div class="md:h-96 h-64 bg-cover -mt-16 flex flex-col justify-end"
-                        style="background-image:url(documents/City_Landscape_Background.png)" data-v-ae88d4ae
-                        data-v-6534e546>
+                        style="background-image:url(documents/background2.jpg)" data-v-ae88d4ae data-v-6534e546>
                         <h1 class="pl-5 pb-12 text-shadow" data-v-ae88d4ae>
-                            Projet Python
+                            Projet Java 2
                         </h1> <svg viewBox="0 0 35.28 2.17" preserveAspectRatio="none"
                             class="st1 margin-bottom-negative-1" data-v-ae88d4ae>
                             <path d="M35.28 1.67c-3.07-.55-9.27.41-16.15 0-6.87-.4-13.74-.58-19.13.1v.4h35.28z"
@@ -83,116 +84,61 @@
                             data-v-6534e546>
                             <div class="ml-0 md:ml-12 lg:w-2/3 sticky order-last md:order-first" data-v-6534e546>
                                 <h3 class="my-8" data-v-6534e546>
-                                    1 - Cahier des charges
+                                    1 - Découverte du projet et première itération
                                 </h3>
                                 <div class="flex mt-10" data-v-6534e546>
                                     <div class="text-black" data-v-6534e546><a
-                                            href="https://github.com/LoricWorms/projet_python" target="_blank"
+                                            href="https://gitlab.com/APeixoto/modo-modo" target="_blank"
                                             class="button-bloc bg-orangeClair" data-v-6534e546>
-                                            Voir le repository GitHub du projet
+                                            Voir le repository GitLab du projet
                                         </a></div>
                                 </div>
                                 <p class="text-justify my-4 text-grey-9 md:leading-relaxed" data-v-6534e546>
-                                    La société STESIO dispose d'un contrôleur de domaine CDSTESIO et d'un serveur de
-                                    base de données
-                                    WEB-BD-STESIO.
-                                    Le client souhaite que chaque utilisateur d'un de ses sites ayant un compte dans la
-                                    société STESIO
-                                    dispose de sa propre base de données sur le serveur de base de données avec son
-                                    propre accès.
-                                    Il est possible de récupérer la liste des utilisateurs en interrogeant l'annuaire
-                                    Active Directory (AD) du
-                                    contrôleur de domaine et de la copier dans un fichier CSV (fichier texte avec
-                                    séparation des informations).
-                                    Un script python générera à partir de ce fichier CSV les ordres SQL de création des
-                                    comptes utilisateurs
-                                    avec leur mot de passe, leur base de données et leur accès.
-                                    Le script SQL ainsi créé sera enfin exécuté dans le SGBD MariaDB pour créer les
-                                    utilisateurs, les bases
-                                    de données et leur accès.
-                                    Ainsi, chaque utilisateur pourra se connecter à distance à sa propre base de données
-                                    (seulement la
-                                    sienne) sur le serveur de base de données de la société.
-                                </p> <img src="documents/python.png" alt="Maquette GSB" data-v-6534e546>
-                                <p class="text-justify my-4 text-grey-9 md:leading-relaxed" data-v-6534e546>
-                                    On aura la possibilité de se connecter afin d'avoir accès à plus d'informations (qui
-                                    s'affichent en
-                                    fonction de votre statut d'utilisateur). Je vous laisse les identifiants ici :
+                                    Tout d'abord il était question de réfléchir sur le choix de la technologie 
+                                    d'accès aux données (API, DAO, JPA) et de montrer par un jeu de test que l'intéraction avec 
+                                    la BDD est fonctionelle.
                                 </p>
+                                <p class="text-justify my-4 text-grey-9 md:leading-relaxed" data-v-6534e546>
+                                    Pour se faire nous avons choisis d'utilisé une couche DAO, puis de tester l'implémentation
+                                    de notre classe métier 'Resto' (utile que pour cette partie de test dans notre contexte).
+                                </p><img src="documents/metier_resto.png" alt="Maquette GSB" data-v-6534e546>
+                               
+                                <p class="text-justify my-4 text-grey-9 md:leading-relaxed" data-v-6534e546>
+                                    Puis de faire pareil avec notre classe dao 'RestoDAO' pour vérifier l'intéraction avec la base de données.
+                                </p><img src="documents/dao_resto.png" alt="Maquette GSB" data-v-6534e546>
                                 <h3 class="my-8" data-v-6534e546>
-                                    2 - Extraction des utilisateurs de l'annuaire Active Directory et création de mots
-                                    de passe robustes
+                                    2 - 2ème à 4ème itération
                                 </h3>
                                 <div class="flex mt-10" data-v-6534e546>
                                     <div class="text-black" data-v-6534e546><a
-                                            href="https://github.com/LoricWorms/projet_python/tree/main/projet_python/GROUPE_27_WORMS_TRIBALEAU_ETAPE_4"
-                                            target="_blank" class="button-bloc bg-orangeClair" data-v-6534e546>
-                                            Voir le repository GitHub de l'étape
+                                            href="https://gitlab.com/APeixoto/modo-modo" target="_blank"
+                                            class="button-bloc bg-orangeClair" data-v-6534e546>
+                                            Voir le repository GitLab du projet
                                         </a></div>
                                 </div>
                                 <p class="text-justify my-4 text-grey-9 md:leading-relaxed" data-v-6534e546>
-                                    Dans un premier temps nous devions extraire certaines informations sur certains
-                                    utilisateurs (noms et prénoms) de
-                                    l’annuaire d’un serveur de domaine Windows. Ces informations nous permettront de
-                                    créer les comptes
-                                    utilisateurs et les bases de données dans MariaDB.
-                                </p> <img src="documents/ldap.png" alt="Crud" data-v-6534e546>
-                                <div class="flex mt-10" data-v-6534e546>
-                                    <div class="text-black" data-v-6534e546><a
-                                            href="https://github.com/LoricWorms/projet_python/tree/main/projet_python/GROUPE_27_WORMS_TRIBALEAU_ETAPE_5"
-                                            target="_blank" class="button-bloc bg-orangeClair" data-v-6534e546>
-                                            Voir le repository GitHub de l'étape
-                                        </a></div>
-                                </div>
+                                    Par la suite nous disposions d'un tableau répértoriant les ajouts nécessaires
+                                    et nous devions déterminer leur priorité.
+                                </p> <img src="documents/tableau_java_2.png" alt="Crud" data-v-6534e546>
                                 <p class="text-justify my-4 text-grey-9 md:leading-relaxed" data-v-6534e546>
-                                    Par la suite, la société STESIO a récemment été victime de plusieurs cyberattaques,
-                                    sans conséquence pour l’instant.
-                                    Cependant, le service informatique veut renforcer sa politique de mot de passe
+                                    Notre choix devait tenir compte la la complexité/criticité des tâches, en plus 
+                                    des effectifs dont nous disposions.
                                 </p>
                                 <div class="bg-dark-grey rounded p-8 flex justify-around" data-v-6534e546>
                                     <div data-v-6534e546>
-                                        <h4 data-v-6534e546>contraintes imposées :</h4>
-                                        <p data-v-6534e546>
-                                            - Longueur minimale : 12 caractères <br data-v-6534e546>
-                                            - Au moins 2 majuscules, 2 minuscules, 2 chiffres et 2 caractères
-                                            spéciaux <br data-v-6534e546>
-                                            - Les caractères spéciaux autorisés sont : ! @ # $ % & * + - = . <> / ?<br
-                                                    data-v-6534e546>
-                                                - L'utilisation d'espaces est interdite
-                                                - Le mot de passe ne doit pas contenir de mots issus d'un
-                                                dictionnaire<br data-v-6534e546>
-                                                - Les différents types de caractères ne doivent pas avoir de positions
-                                                spécifiques dans le mot de
-                                                passe
-                                        </p>
+                                        <h4 data-v-6534e546>Choix fait :</h4>
+                                        <ul class="list-disc list-inside my-4" data-v-2fd28016>
+                                            <li data-v-2fd28016>itération 2 → US 1, T 3
+                                            </li>
+                                            <li data-v-2fd28016>itération 3 → US 3, US 4, US 5, US 6, US 7
+                                            </li>
+                                            <li data-v-2fd28016>itération 4 → US 2, T 1, T 2, T 4
+                                            </li>
+                                            <li data-v-2fd28016>semaine suplémentaire en cas de retard sur certaine tâche.
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <h3 class="my-8" data-v-6534e546>
-                                    3 - Programme Python de génération du script SQL (CREATE / DROP)
-                                </h3>
-                                <div class="flex mt-10" data-v-6534e546>
-                                    <div class="text-black" data-v-6534e546><a
-                                            href="https://github.com/LoricWorms/projet_python/tree/main/projet_python/GROUPE_27_WORMS_TRIBALEAU_ETAPE_6"
-                                            target="_blank" class="button-bloc bg-orangeClair" data-v-6534e546>
-                                            Voir le repository GitHub de l'étape
-                                        </a></div>
-                                </div>
-                                <p class="text-justify my-4 text-grey-9 md:leading-relaxed" data-v-6534e546>
-                                    Par la suite nous avons créé le programme python qui permet de générer un script
-                                    sql pour créer l'utilisateur et la bdd associée.
-                                </p> <img src="documents/create.png" alt="Crud" data-v-6534e546>
-                                <div class="flex mt-10" data-v-6534e546>
-                                    <div class="text-black" data-v-6534e546><a
-                                            href="https://github.com/LoricWorms/projet_python/tree/main/projet_python/GROUPE_27_WORMS_TRIBALEAU_ETAPE_8"
-                                            target="_blank" class="button-bloc bg-orangeClair" data-v-6534e546>
-                                            Voir le repository GitHub de l'étape
-                                        </a></div>
-                                </div>
-                                <p class="text-justify my-4 text-grey-9 md:leading-relaxed" data-v-6534e546>
-                                    Puis celui permettant la suppression des éléments générés.
-                                </p><img src="documents/drop.png" alt="Crud" data-v-6534e546>
-                                <p class="text-justify my-4 text-grey-9 md:leading-relaxed" data-v-2fd28016>
-
                                 <h3 class="my-8" data-v-6534e546>
                                     Conclusion
                                 </h3>
@@ -200,16 +146,14 @@
                                 <div class="bg-dark-grey rounded p-8 flex justify-around" data-v-6534e546>
                                     <div data-v-6534e546>
                                         <h4 data-v-6534e546>Synthèse des compétences :</h4>
-                                        </p>
                                         <ul class="list-disc list-inside my-4" data-v-2fd28016>
-                                            <li data-v-2fd28016>Atribution des privilèges d'un utilisateur uniquement
-                                                sur
-                                                ça BDD (Vérifier le respect des règles d’utilisation des ressources
-                                                numériques)
+                                            <li data-v-2fd28016>suivis des demandes sous forme de tickets (Collecter, suivre et orienter des demandes )
                                             </li>
-                                            <li data-v-2fd28016>Savoir travailler en groupe de manière efficace et
-                                                productive
-                                                (Planifier les activités)
+                                            <li data-v-2fd28016>daily scrum pour s'assuer de l'avencement du projet
+                                                (Planifier les activité)
+                                            </li>
+                                            <li data-v-2fd28016>effectuer des tests avant chaque intégration de fonctionnalité
+                                                (Réaliser les tests d’intégration et d’acceptation d’un service )
                                             </li>
                                         </ul>
                                     </div>
@@ -221,18 +165,17 @@
                                             Voir le tableau de compétences
                                         </a></div>
                                 </div>
-
                             </div>
                             <div class="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8"
                                 data-v-04f5f612 data-v-6534e546>
                                 <h6 data-v-04f5f612>
                                     Autre projets
                                 </h6>
-                                <div class="flex my-3" data-v-04f5f612><a href="java.html"
-                                        class="blob-prj1 bg-cover w-10 h-10 rounded-full mr-3" data-v-04f5f612></a>
+                                <div class="flex my-3" data-v-04f5f612><a href="python.html"
+                                        class="blob-prj3 bg-cover w-10 h-10 rounded-full mr-3" data-v-04f5f612></a>
                                     <div data-v-04f5f612>
-                                        <p data-v-04f5f612><a href="java.html" class="font-bold" data-v-04f5f612>
-                                                projet Java
+                                        <p data-v-04f5f612><a href="python.html" class="font-bold" data-v-04f5f612>
+                                                projet Python
                                             </a></p>
                                         <div data-v-04f5f612>
                                             BTS SIO 2023/2024
@@ -242,7 +185,7 @@
                                 <div class="flex py-3" data-v-04f5f612><a href="web.html"
                                         class="blob-prj2 bg-cover w-10 h-10 rounded-full mr-3" data-v-04f5f612></a>
                                     <div data-v-04f5f612>
-                                        <p data-v-04f5f612><a href=" " class="font-bold" data-v-04f5f612>
+                                        <p data-v-04f5f612><a href="web.html" class="font-bold" data-v-04f5f612>
                                                 Projet WEB
                                             </a></p>
                                         <div data-v-04f5f612>
@@ -261,11 +204,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="flex py-3" data-v-04f5f612><a href="java2.html"
+                                <div class="flex py-3" data-v-04f5f612><a href="java.html"
                                     class="blob-prj1 bg-cover w-10 h-10 rounded-full mr-3" data-v-04f5f612></a>
                                 <div data-v-04f5f612>
-                                    <p data-v-04f5f612><a href="java2.html" class="font-bold" data-v-04f5f612>
-                                            Projet JAVA 2
+                                    <p data-v-04f5f612><a href="java.html" class="font-bold" data-v-04f5f612>
+                                            Projet JAVA 
                                         </a></p>
                                     <div data-v-04f5f612>
                                         BTS SIO 2024/2025
@@ -277,8 +220,7 @@
                     </div> <svg viewBox="0 0 35.28 2.17" preserveAspectRatio="none"
                         class="st0 margin-bottom-negative-1 neg-index-1" data-v-6534e546>
                         <path d="M35.28 1.67c-3.07-.55-9.27.41-16.15 0-6.87-.4-13.74-.58-19.13.1v.4h35.28z"
-                            data-v-6534e546>
-                        </path>
+                            data-v-6534e546></path>
                         <path
                             d="M35.28 1.16c-3.17-.8-7.3.4-10.04.56-2.76.17-9.25-1.47-12.68-1.3-3.42.16-4.64.84-7.04.86C3.12 1.31 0 .4 0 .4v1.77h35.28z"
                             opacity=".5" data-v-6534e546></path>
